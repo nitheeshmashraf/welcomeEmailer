@@ -10,7 +10,15 @@
     <#assign var_CAMPAIGN_DATE_FILTER_FORMAT = SQL_DAILY_DEALS_MASTER.CAMPAIGN_DATE?string("yyyy-MM-dd")>
 
     <!-- utm -->
+    <!-- <#assign var_SUITE_UTM="http://www.cobone.com/en/deals/dubai?utm_source=suite&utm_medium=email&utm_content=dubai-deals-link&utm_campaign=cob-uae-bns-22-09-2015-en">
+
     <#assign var_CAMPAIGN_UTM = SQL_DAILY_DEALS_MASTER.CAMPAIGN_UTMS?replace("%%city%%",var_CAMPAIGN_CITY)?replace("%%lang%%",var_CAMPAIGN_LANGUAGE)?replace("%%date%%",var_CAMPAIGN_DATE_dd_MM_yyyy)>
+
+    <#assign var_CAMPAIGN_UTM = SQL_DAILY_DEALS_MASTER.CAMPAIGN_UTMS?replace("%%city%%",var_CAMPAIGN_CITY)?replace("%%lang%%",var_CAMPAIGN_LANGUAGE)?replace("%%date%%",var_CAMPAIGN_DATE_dd_MM_yyyy)>
+    
+    <#assign var_LINK_LOGO_UTM = var_CAMPAIGN_UTM?replace("%%content%%",var_CAMPAIGN_CITY + "-deals-link")>
+    
+    <#assign var_LINK_LOGO = "https://www.cobone.com/" + var_CAMPAIGN_LANGUAGE +"/deals/" + var_CAMPAIGN_CITY +"?"+var_LINK_LOGO_UTM> -->
 
     <!-- unsub -->
     <#assign var_LINK_UNSUBS = "https://www.cobone.com/unsubscribe?lang=" + var_CAMPAIGN_LANGUAGE +"&email="+LIST_TRAINING_MEDG.EMAIL_ADDRESS_+"&r="+ messagedigest(CONTACTS_LIST.EMAIL_ADDRESS_+"{4BReF2PJO_nUydF-}","SHA-256")?hex+"&"+var_CAMPAIGN_UTM?replace("%%content%%","unsubscribe")>
