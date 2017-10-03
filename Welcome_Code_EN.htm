@@ -1,3 +1,15 @@
+<!-- Campaign variables -->
+    <#assign var_CAMPAIGN_CITY = SQL_DAILY_DEALS_MASTER.CAMPAIGN_CITY>
+    
+    <#assign var_CAMPAIGN_LANGUAGE = "en">
+    
+    <#assign var_CAMPAIGN_CURRENCY = "AED">
+    
+    <#assign var_CAMPAIGN_DATE_dd_MM_yyyy = SQL_DAILY_DEALS_MASTER.CAMPAIGN_DATE?string("dd-MM-yyyy")>
+    
+    <#assign var_CAMPAIGN_DATE_FILTER_FORMAT = SQL_DAILY_DEALS_MASTER.CAMPAIGN_DATE?string("yyyy-MM-dd")>
+
+<!-- data -->
 <#assign var_DEAL_DISPLAY_COUNT = 1>
       <#data SQL_SUPP_TAB_NIT_TEST_WELCOME as deal>
       <#filter DK_MATCH =1>
