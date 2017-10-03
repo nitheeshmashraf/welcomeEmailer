@@ -1,0 +1,38 @@
+<#assign var_DEAL_DISPLAY_COUNT=1>
+      <#data SQL_SUPP_TAB_NIT_TEST_WELCOME as deal>
+      <#filter DK_MATCH=1>
+      <#fields IMG_URL_ALT_TEXT IMG_URL>
+      <#if var_DEAL_DISPLAY_COUNT==1>
+        <#assign var_IMG_URL1= deal.IMG_URL>
+        <#assign var_IMG_URL_ALT_TEXT1= deal.IMG_URL_ALT_TEXT>
+      </#if>
+      <#if var_DEAL_DISPLAY_COUNT==2>
+        <#assign var_IMG_URL2= deal.IMG_URL>
+        <#assign var_IMG_URL_ALT_TEXT2= deal.IMG_URL_ALT_TEXT>
+      </#if>
+      <#if var_DEAL_DISPLAY_COUNT==3>
+        <#assign var_IMG_URL3= deal.IMG_URL>
+        <#assign var_IMG_URL_ALT_TEXT3= deal.IMG_URL_ALT_TEXT>
+      </#if>
+      <#if var_DEAL_DISPLAY_COUNT==4>
+        <#assign var_IMG_URL4= deal.IMG_URL>
+        <#assign var_IMG_URL_ALT_TEXT4= deal.IMG_URL_ALT_TEXT>
+      </#if>
+      <#if var_DEAL_DISPLAY_COUNT==5>
+        <#assign var_IMG_URL5= deal.IMG_URL>
+        <#assign var_IMG_URL_ALT_TEXT5= deal.IMG_URL_ALT_TEXT>
+      </#if>
+      <#if var_DEAL_DISPLAY_COUNT==6>
+        <#assign var_IMG_URL6= deal.IMG_URL>
+        <#assign var_IMG_URL_ALT_TEXT6= deal.IMG_URL_ALT_TEXT>
+      </#if>
+      <#if var_DEAL_DISPLAY_COUNT==7>
+        <#assign var_IMG_URL7= deal.IMG_URL>
+        <#assign var_IMG_URL_ALT_TEXT7= deal.IMG_URL_ALT_TEXT>
+      </#if>
+      <#if var_DEAL_DISPLAY_COUNT==8>
+        <#assign var_IMG_URL8= deal.IMG_URL>
+        <#assign var_IMG_URL_ALT_TEXT8= deal.IMG_URL_ALT_TEXT>
+      </#if>
+      <#assign var_DEAL_DISPLAY_COUNT=var_DEAL_DISPLAY_COUNT+1>
+      </#data>
