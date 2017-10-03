@@ -25,7 +25,7 @@
 
 
     <!-- unsub -->
-    <#assign var_LINK_UNSUBS = "https://www.cobone.com/unsubscribe?lang=" + var_CAMPAIGN_LANGUAGE +"&email="+LIST_TRAINING_MEDG.EMAIL_ADDRESS_+"&r="+ messagedigest(CONTACTS_LIST.EMAIL_ADDRESS_+"{4BReF2PJO_nUydF-}","SHA-256")?hex+"&"+var_CAMPAIGN_UTM?replace("%%content%%","unsubscribe")>
+    <#assign var_LINK_UNSUBS = "https://www.cobone.com/unsubscribe?lang=" + var_CAMPAIGN_LANGUAGE +"&email="+LIST_TRAINING_MEDG.EMAIL_ADDRESS_+"&r="+ messagedigest(LIST_TRAINING_MEDG.EMAIL_ADDRESS_+"{4BReF2PJO_nUydF-}","SHA-256")?hex+"&"+var_CAMPAIGN_UTM?replace("%%content%%","unsubscribe")>
     <#assign var_TEXT_UNSUBS = "Unsubscribe">
 
     <!-- policy -->
