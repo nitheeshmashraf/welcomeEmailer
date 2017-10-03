@@ -5,10 +5,7 @@
     
     <#assign var_CAMPAIGN_CURRENCY = "AED">
     
-    <#assign var_CAMPAIGN_DATE_dd_MM_yyyy = SQL_DAILY_DEALS_MASTER.CAMPAIGN_DATE?string("dd-MM-yyyy")>
     
-    <#assign var_CAMPAIGN_DATE_FILTER_FORMAT = SQL_DAILY_DEALS_MASTER.CAMPAIGN_DATE?string("yyyy-MM-dd")>
-
     <#assign var_CAMPAIGN_NAME="Welcome-"+var_CAMPAIGN_CITY+"-"+var_CAMPAIGN_LANGUAGE>
 
     <#assign var_LOGO_CONTENT=var_CAMPAIGN_NAME+"-deals-link">
@@ -16,16 +13,7 @@
     <#assign var_twitter_CONTENT=var_CAMPAIGN_NAME+"-twitter-icon-link">
     <#assign var_insta_CONTENT=var_CAMPAIGN_NAME+"-instagram-icon-link">
 
-    <!-- utm -->
-    <!-- <#assign var_SUITE_UTM="http://www.cobone.com/en/deals/dubai?utm_source=suite&utm_medium=email&utm_content=dubai-deals-link&utm_campaign=cob-uae-bns-22-09-2015-en">
-
-    <#assign var_CAMPAIGN_UTM = SQL_DAILY_DEALS_MASTER.CAMPAIGN_UTMS?replace("%%city%%",var_CAMPAIGN_CITY)?replace("%%lang%%",var_CAMPAIGN_LANGUAGE)?replace("%%date%%",var_CAMPAIGN_DATE_dd_MM_yyyy)>
-
-    <#assign var_CAMPAIGN_UTM = SQL_DAILY_DEALS_MASTER.CAMPAIGN_UTMS?replace("%%city%%",var_CAMPAIGN_CITY)?replace("%%lang%%",var_CAMPAIGN_LANGUAGE)?replace("%%date%%",var_CAMPAIGN_DATE_dd_MM_yyyy)>
     
-    <#assign var_LINK_LOGO_UTM = var_CAMPAIGN_UTM?replace("%%content%%",var_CAMPAIGN_CITY + "-deals-link")>
-    
-    <#assign var_LINK_LOGO = "https://www.cobone.com/" + var_CAMPAIGN_LANGUAGE +"/deals/" + var_CAMPAIGN_CITY +"?"+var_LINK_LOGO_UTM> -->
     <#assign var_SUITE_UTM="http://www.cobone.com/"+var_CAMPAIGN_LANGUAGE+"/deals/"+var_CAMPAIGN_CITY+"?utm_source=suite&utm_medium=email&utm_campaign="+var_CAMPAIGN_NAME+"&utm_content=">
 
 
