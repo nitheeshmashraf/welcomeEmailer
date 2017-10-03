@@ -259,7 +259,12 @@ td [class="view"] {
               <!-- footer -->
               <table width="100%" border="0" cellpadding="5" cellspacing="0" class="footer-container" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
             <tr>
-              <td style="text-align:center;color:#39abf3;"><a href="http://click.cobone.com/u/un.php?par=$uid$_$cid$_$llid$_$sid$" target="_blank" style="font-family:'Open Sans', Arial, sans-serif;color:#0099ff;font-size:11px;">Unsubscribe</a>&nbsp;&nbsp;<a href="http://www.cobone.com/static/privacypolicy" target="_blank" style="font-family:'Open Sans', Arial, sans-serif;color:#0099ff;font-size:11px;">Privacy Policy</a></td>
+              <td style="text-align:center;color:#39abf3;">
+                <a href="${clickthrough('LINK_UNSUBS','var_LINK_UNSUBS=' +var_LINK_UNSUBS)}" style="font-family:'Open Sans', Arial, sans-serif;color:#0099ff;font-size:11px;">${var_TEXT_UNSUBS}</a>
+
+                &nbsp;&nbsp;
+                <a href="${clickthrough('LINK_PRIVACY_POL','var_LINK_PRIVACY_POL=' +var_LINK_PRIVACY_POL)}" style="font-family:'Open Sans', Arial, sans-serif;color:#0099ff;font-size:11px;">${var_TEXT_PRIVACY_POL}</a>
+              </td>
             </tr>
           </table></td>
     

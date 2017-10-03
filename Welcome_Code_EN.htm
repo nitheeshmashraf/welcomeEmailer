@@ -9,6 +9,19 @@
     
     <#assign var_CAMPAIGN_DATE_FILTER_FORMAT = SQL_DAILY_DEALS_MASTER.CAMPAIGN_DATE?string("yyyy-MM-dd")>
 
+    <!-- utm -->
+    <#assign var_CAMPAIGN_UTM = SQL_DAILY_DEALS_MASTER.CAMPAIGN_UTMS?replace("%%city%%",var_CAMPAIGN_CITY)?replace("%%lang%%",var_CAMPAIGN_LANGUAGE)?replace("%%date%%",var_CAMPAIGN_DATE_dd_MM_yyyy)>
+
+    <!-- unsub -->
+    <#assign var_LINK_UNSUBS = "https://www.cobone.com/unsubscribe?lang=" + var_CAMPAIGN_LANGUAGE +"&email="+LIST_TRAINING_MEDG.EMAIL_ADDRESS_+"&r="+ messagedigest(CONTACTS_LIST.EMAIL_ADDRESS_+"{4BReF2PJO_nUydF-}","SHA-256")?hex+"&"+var_CAMPAIGN_UTM?replace("%%content%%","unsubscribe")>
+    <#assign var_TEXT_UNSUBS = "Unsubscribe">
+
+    <!-- policy -->
+    <#assign var_LINK_PRIVACY_POL = "https://www.cobone.com/" + var_CAMPAIGN_LANGUAGE +"/static/privacypolicy?"+var_CAMPAIGN_UTM?replace("%%content%%","privacy-policy")>
+    
+    <#assign var_TEXT_PRIVACY_POL = "Privacy Policy">
+
+
 <!-- data -->
 <#assign var_DEAL_DISPLAY_COUNT = 1>
       <#data SQL_SUPP_TAB_NIT_TEST_WELCOME as deal>
