@@ -1,0 +1,36 @@
+<#if var_LINK1_TEXT?isnull>
+<#else>        		
+<a href="${clickthrough('LINK1_URL','var_LINK1_URL=' +var_LINK1_URL)}" style="font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;font-size:12px;color:#39abf3;">${var_LINK1_TEXT}</a>
+</#if>
+
+<#if var_LINK2_TEXT?isnull>
+<#else>  
+                                		<span style="display:inline-block;padding:0 2px 0 2px;color:#cccccc;">|</span>
+                                		<a href="${clickthrough('LINK2_URL','var_LINK2_URL=' +var_LINK2_URL)}" style="font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;font-size:12px;color:#39abf3;">${var_LINK2_TEXT}</a>
+                                        
+ </#if> 
+ 
+ <#if var_LINK3_TEXT?isnull>
+ <#else>                                        
+                                		<span style="display:inline-block;padding:0 2px 0 2px;color:#cccccc;">|</span>
+                                		<a href="${clickthrough('LINK3_URL','var_LINK3_URL=' +var_LINK3_URL)}" style="font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;font-size:12px;color:#39abf3;">${var_LINK3_TEXT}</a>
+                                        
+ </#if> 
+ 
+ <#if var_LINK4_TEXT?isnull>
+ <#else> 
+                                		<span style="display:inline-block;padding:0 2px 0 2px;color:#cccccc;">|</span>
+                                		<a href="${clickthrough('LINK4_URL','var_LINK4_URL=' +var_LINK4_URL)}" style="font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;font-size:12px;color:#39abf3;">${var_LINK4_TEXT}</a>
+                                        
+</#if> 
+
+                                		<br/><br/>
+                  									To ensure you receive these emails add <a href="mailto:email@deals.cobone.com" style="font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;color:#39abf3;">email@deals.cobone.com</a> to your allowed contacts.
+                  									<br/>
+																		You received this email because you are registered on cobone.com with the email address: ${LIST_TRAINING_MEDG.EMAIL_ADDRESS_}
+																		<br/>
+                  									&copy; 2017 Cobone | Dubai Studio City, Office 1309, DSC Tower | PO Box 478813 Dubai, UAE | Tel: +97145562000
+                                		<br/><br/>
+                                		<a href="${clickthrough('LINK_UNSUBS','var_LINK_UNSUBS=' +var_LINK_UNSUBS)}" style="font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;font-size:11px;color:#39abf3;">${var_TEXT_UNSUBS}</a>
+                                		<span style="display:inline-block;padding:0 2px 0 2px;color:#cccccc;">|</span>
+                                		<a href="${clickthrough('LINK_PRIVACY_POL','var_LINK_PRIVACY_POL=' +var_LINK_PRIVACY_POL)}" style="font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;font-size:11px;color:#39abf3;">${var_TEXT_PRIVACY_POL}</a>
