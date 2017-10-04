@@ -24,9 +24,9 @@
 
 
     <#assign var_LINK_LOGO=var_SUITE_UTM+var_LOGO_CONTENT>
-    <#assign var_LINK_fb=var_SUITE_UTM+var_fb_CONTENT>
-    <#assign var_LINK_twitter=var_SUITE_UTM+var_twitter_CONTENT>
-    <#assign var_LINK_insta=var_SUITE_UTM+var_insta_CONTENT>
+    <#assign var_LINK_fb=var_SUITE_UTM_FB+var_fb_CONTENT>
+    <#assign var_LINK_twitter=var_SUITE_UTM_insta+var_twitter_CONTENT>
+    <#assign var_LINK_insta=var_SUITE_UTM_twitter+var_insta_CONTENT>
 
 
 
@@ -39,6 +39,7 @@
     
     <#assign var_TEXT_PRIVACY_POL = "Privacy Policy">
 
+    <#assign var_COB_URL="https://www.cobone.com/en/deals/">
 
 <!-- data -->
 <#assign var_DEAL_DISPLAY_COUNT = 1>
@@ -46,42 +47,42 @@
       <#filter DK_MATCH =1>
       <#fields IMG_URL_ALT_TEXT IMG_URL IMG_URL_LINK>
       <#if var_DEAL_DISPLAY_COUNT == 1>
-        <#assign var_IMG_URL1 = deal.IMG_URL>
+        <#assign var_IMG_URL1 = var_COB_URL+deal.IMG_URL>
         <#assign var_IMG_URL_ALT_TEXT1 = deal.IMG_URL_ALT_TEXT>
         <#assign var_IMG_URL_LINK1 = deal.IMG_URL_LINK>
       </#if>
       <#if var_DEAL_DISPLAY_COUNT == 2>
-        <#assign var_IMG_URL2 = deal.IMG_URL>
+        <#assign var_IMG_URL2 = var_COB_URL+deal.IMG_URL>
         <#assign var_IMG_URL_ALT_TEXT2 = deal.IMG_URL_ALT_TEXT>
         <#assign var_IMG_URL_LINK2 = deal.IMG_URL_LINK>
       </#if>
       <#if var_DEAL_DISPLAY_COUNT == 3>
-        <#assign var_IMG_URL3 = deal.IMG_URL>
+        <#assign var_IMG_URL3 = var_COB_URL+deal.IMG_URL>
         <#assign var_IMG_URL_ALT_TEXT3 = deal.IMG_URL_ALT_TEXT>
         <#assign var_IMG_URL_LINK3 = deal.IMG_URL_LINK>
       </#if>
       <#if var_DEAL_DISPLAY_COUNT == 4>
-        <#assign var_IMG_URL4 = deal.IMG_URL>
+        <#assign var_IMG_URL4 = var_COB_URL+deal.IMG_URL>
         <#assign var_IMG_URL_ALT_TEXT4 = deal.IMG_URL_ALT_TEXT>
         <#assign var_IMG_URL_LINK4 = deal.IMG_URL_LINK>
       </#if>
       <#if var_DEAL_DISPLAY_COUNT == 5>
-        <#assign var_IMG_URL5 = deal.IMG_URL>
+        <#assign var_IMG_URL5 = var_COB_URL+deal.IMG_URL>
         <#assign var_IMG_URL_ALT_TEXT5 = deal.IMG_URL_ALT_TEXT>
         <#assign var_IMG_URL_LINK5 = deal.IMG_URL_LINK>
       </#if>
       <#if var_DEAL_DISPLAY_COUNT == 6>
-        <#assign var_IMG_URL6 = deal.IMG_URL>
+        <#assign var_IMG_URL6 = var_COB_URL+deal.IMG_URL>
         <#assign var_IMG_URL_ALT_TEXT6 = deal.IMG_URL_ALT_TEXT>
         <#assign var_IMG_URL_LINK6 = deal.IMG_URL_LINK>
       </#if>
       <#if var_DEAL_DISPLAY_COUNT == 7>
-        <#assign var_IMG_URL7 = deal.IMG_URL>
+        <#assign var_IMG_URL7 = var_COB_URL+deal.IMG_URL>
         <#assign var_IMG_URL_ALT_TEXT7 = deal.IMG_URL_ALT_TEXT>
         <#assign var_IMG_URL_LINK7 = deal.IMG_URL_LINK>
       </#if>
       <#if var_DEAL_DISPLAY_COUNT == 8>
-        <#assign var_IMG_URL8 = deal.IMG_URL>
+        <#assign var_IMG_URL8 = var_COB_URL+deal.IMG_URL>
         <#assign var_IMG_URL_ALT_TEXT8 = deal.IMG_URL_ALT_TEXT>
         <#assign var_IMG_URL_LINK8 = deal.IMG_URL_LINK>
       </#if>
