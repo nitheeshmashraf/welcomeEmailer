@@ -1,0 +1,70 @@
+<html style="opacity: 1;">
+  <head>
+    <title></title>
+  </head>
+  <body style="visibility: visible;">
+      <#assign var_LANG = "en">
+      <table align="center" style="min-width: 100% ! important; margin: 0px; background: none repeat scroll 0% 0% rgb(237, 237, 237); padding: 30px; width: 100% ! important; font-family: Arial; text-align: center; letter-spacing: 0.01em; line-height: 1.3em;" width="100%">
+        <tbody>
+          <tr>
+            <td>&nbsp;
+              <table align="center" style="margin: 0px auto ! important; padding: 30px; width: 93% ! important; max-width: 600px; text-align: center; background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204);">
+                <tbody>
+                  <tr>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table align="center" cellpadding="6" cellspacing="0" style="width: 93% ! important;"><!-- Header -->
+                        <tbody>
+      <#include "/contentlibrary/transactional_emails/header_en.htm" >
+      <tr>
+        <td align="center" valign="top"><img alt="Welcome to Cobone" border="0" src="https://s3-eu-west-1.amazonaws.com/cdn.cobone.com/newsletter/2015/generic-header/ico-welcome.png" style="margin-top: 10px ! important; width: 85px ! important; height: auto ! important;" />
+        </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="font-size: 1.4em ! important; color: rgb(45, 144, 236) ! important;" valign="top">Welcome to Cobone
+                            </td>
+                          </tr>
+                          <!-- Body -->
+                          <tr>
+                            <td align="left" style="font-size: 0.95em; color: rgb(68, 68, 68);" valign="top">Hello ${CONTACTS_LIST.firstName},
+                              <br />
+                              <br />
+                              A warm welcome to Cobone!
+                              <br />
+                              <br />
+                              We look forward to sharing our amazing deals with you every day.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top">
+                              <table cellpadding="0" cellspacing="0">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" style="display: block; padding: 12px 24px; font-size: 1em; color: rgb(255, 255, 255); background: none repeat scroll 0% 0% rgb(45, 144, 236); border-bottom: 3px solid rgb(0, 99, 194);"><a class="cobonebtnlabel" href="${clickthrough('lastest_deals_link')}" style="text-decoration: none; width: 100%; display: block;"><span style="color: rgb(255, 255, 255);">Check out our latest deals here</span></a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="font-size: 0.95em; color: rgb(68, 68, 68);" valign="top">The Cobone Team
+                            </td>
+                          </tr>
+                          <!-- Footer -->
+      <#include "/contentlibrary/transactional_emails/social_en.htm" >
+      </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+      <#include "/contentlibrary/transactional_emails/footer_en.htm" ></td>
+          </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
